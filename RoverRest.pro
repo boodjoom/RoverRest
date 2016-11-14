@@ -4,7 +4,7 @@ QT -= gui
 CONFIG += c++11
 
 TARGET = RoverRest
-CONFIG += console depend_includepath
+CONFIG += console
 CONFIG -= app_bundle
 
 TEMPLATE = app
@@ -18,7 +18,8 @@ OTHER_FILES += etc/*  logs/*
 win32 {
    DEFINES += QTWEBAPPLIB_IMPORT
 }
-
+#QtWebApp
+CONFIG += depend_includepath
 # Directories, where the *.h files are stored
 INCLUDEPATH += $$PWD/3rdparty/QtWebApp
 
@@ -32,6 +33,19 @@ CONFIG(release, debug|release) {
 CONFIG(debug, debug|release) {
     win32:      LIBS += -L$$PWD/3rdparty/lib/win32-mingw/debug/          -lQtWebAppd1
     unix:!mac:  LIBS += -L$$PWD/3rdparty/lib/rpi-g++/debug/              -lQtWebAppd
+}
+
+#RoboBody
+INCLUDEPATH += $$PWD/../RoboBody
+
+CONFIG(release, debug|release) {
+#    win32:      LIBS += -L$$PWD/3rdparty/lib/win32-mingw/release/          -lQtWebApp1
+    unix:!mac: LIBS += -lRoboBody
+}
+
+CONFIG(debug, debug|release) {
+    win32:      LIBS += -L$$PWD/../build-RoboBody-Qt_5_5_1_MinGW_32bit-Debug/debug/          -lRoboBody
+#    unix:!mac:  LIBS += -L$$PWD/3rdparty/lib/rpi-g++/debug/              -lQtWebAppd
 }
 
 HEADERS += \

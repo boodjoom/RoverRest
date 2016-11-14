@@ -3,17 +3,17 @@
 
 #include <QSettings>
 #include <QDateTime>
-
-class Rover
-{
-public:
-    Rover(){}
-    void init(QSettings&){}
-    void connect(){}
-    void setRefSpeed(double speed, QDateTime timeout){}
-    void setRefYaw(double yaw){}
-    void startManip(){}
-};
+#include "rover.h"
+//class Rover
+//{
+//public:
+//    Rover(){}
+//    void init(QSettings&){}
+//    void connect(){}
+//    void setRefSpeed(double speed, QDateTime timeout){}
+//    void setRefYaw(double yaw){}
+//    void startManip(){}
+//};
 
 class RoverManager
 {
