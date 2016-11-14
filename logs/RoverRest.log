@@ -1,0 +1,256 @@
+15.11.2016 00:29:37.712 0 DEBUG    3780 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:29:37.712 0 DEBUG    3780 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:29:37.715 0 DEBUG    3780 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:29:37.716 0 DEBUG    3780 Call Rover init
+15.11.2016 00:29:37.717 0 DEBUG    3780 start rover init TH  0xec4
+15.11.2016 00:29:37.717 0 DEBUG    3780 Call Rover connect
+15.11.2016 00:29:37.717 0 DEBUG    3780 send openport TH  0xec4
+15.11.2016 00:29:37.718 0 DEBUG    3780 RequestMapper: created
+15.11.2016 00:29:37.726 0 DEBUG    3780 HttpListener: Listening on port 8080
+15.11.2016 00:29:37.726 1 WARNING  3780 Application has started
+15.11.2016 00:29:37.757 0 DEBUG    5216 serialcomm open TH  0x1460
+15.11.2016 00:29:37.757 0 DEBUG    5216 start serialcomm TH  0x1460
+15.11.2016 00:29:37.769 1 WARNING  5216 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:30:35.554 0 DEBUG    1860 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:30:35.554 0 DEBUG    1860 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:30:35.559 0 DEBUG    1860 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:30:35.560 0 DEBUG    1860 Call Rover init
+15.11.2016 00:30:35.561 0 DEBUG    1860 start rover init TH  0x744
+15.11.2016 00:30:35.561 0 DEBUG    1860 Call Rover connect
+15.11.2016 00:30:35.561 0 DEBUG    1860 send openport TH  0x744
+15.11.2016 00:30:35.562 0 DEBUG    1860 RequestMapper: created
+15.11.2016 00:30:35.575 0 DEBUG    1860 HttpListener: Listening on port 8080
+15.11.2016 00:30:35.575 1 WARNING  1860 Application has started
+15.11.2016 00:30:35.573 0 DEBUG    2060 serialcomm open TH  0x80c
+15.11.2016 00:30:35.573 0 DEBUG    2060 start serialcomm TH  0x80c
+15.11.2016 00:30:35.584 1 WARNING  2060 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:30:41.607 0 DEBUG    4108 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:30:41.607 0 DEBUG    4108 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:30:41.610 0 DEBUG    4108 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:30:41.611 0 DEBUG    4108 Call Rover init
+15.11.2016 00:30:41.611 0 DEBUG    4108 start rover init TH  0x100c
+15.11.2016 00:30:41.612 0 DEBUG    4108 Call Rover connect
+15.11.2016 00:30:41.612 0 DEBUG    4108 send openport TH  0x100c
+15.11.2016 00:30:41.612 0 DEBUG    4108 RequestMapper: created
+15.11.2016 00:30:41.622 0 DEBUG    4108 HttpListener: Listening on port 8080
+15.11.2016 00:30:41.622 1 WARNING  4108 Application has started
+15.11.2016 00:30:41.638 0 DEBUG    7108 serialcomm open TH  0x1bc4
+15.11.2016 00:30:41.638 0 DEBUG    7108 start serialcomm TH  0x1bc4
+15.11.2016 00:30:41.649 1 WARNING  7108 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:30:55.767 0 DEBUG    1184 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:30:55.767 0 DEBUG    1184 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:30:55.770 0 DEBUG    1184 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:30:55.771 0 DEBUG    1184 Call Rover init
+15.11.2016 00:30:55.772 0 DEBUG    1184 start rover init TH  0x4a0
+15.11.2016 00:30:55.772 0 DEBUG    1184 Call Rover connect
+15.11.2016 00:30:55.772 0 DEBUG    1184 send openport TH  0x4a0
+15.11.2016 00:30:55.773 0 DEBUG    1184 RequestMapper: created
+15.11.2016 00:30:55.782 0 DEBUG    1184 HttpListener: Listening on port 8080
+15.11.2016 00:30:55.782 1 WARNING  1184 Application has started
+15.11.2016 00:30:55.799 0 DEBUG    6860 serialcomm open TH  0x1acc
+15.11.2016 00:30:55.799 0 DEBUG    6860 start serialcomm TH  0x1acc
+15.11.2016 00:30:55.810 1 WARNING  6860 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:31:26.271 0 DEBUG    7548 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:31:26.272 0 DEBUG    7548 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:31:26.275 0 DEBUG    7548 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:31:26.276 0 DEBUG    7548 Call Rover init
+15.11.2016 00:31:26.276 0 DEBUG    7548 start rover init TH  0x1d7c
+15.11.2016 00:31:26.277 0 DEBUG    7548 Call Rover connect
+15.11.2016 00:31:26.277 0 DEBUG    7548 send openport TH  0x1d7c
+15.11.2016 00:31:26.277 0 DEBUG    7548 RequestMapper: created
+15.11.2016 00:31:26.307 0 DEBUG    7548 HttpListener: Listening on port 8080
+15.11.2016 00:31:26.307 1 WARNING  7548 Application has started
+15.11.2016 00:31:26.381 0 DEBUG    6676 serialcomm open TH  0x1a14
+15.11.2016 00:31:26.381 0 DEBUG    6676 start serialcomm TH  0x1a14
+15.11.2016 00:31:26.393 1 WARNING  6676 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:31:45.560 0 DEBUG    5772 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:31:45.560 0 DEBUG    5772 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:31:45.563 0 DEBUG    5772 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:31:45.564 0 DEBUG    5772 Call Rover init
+15.11.2016 00:31:45.565 0 DEBUG    5772 start rover init TH  0x168c
+15.11.2016 00:31:45.565 0 DEBUG    5772 Call Rover connect
+15.11.2016 00:31:45.565 0 DEBUG    5772 send openport TH  0x168c
+15.11.2016 00:31:45.566 0 DEBUG    5772 RequestMapper: created
+15.11.2016 00:31:45.594 0 DEBUG    5772 HttpListener: Listening on port 8080
+15.11.2016 00:31:45.594 1 WARNING  5772 Application has started
+15.11.2016 00:31:45.608 0 DEBUG    3260 serialcomm open TH  0xcbc
+15.11.2016 00:31:45.608 0 DEBUG    3260 start serialcomm TH  0xcbc
+15.11.2016 00:31:45.619 1 WARNING  3260 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:33:00.727 0 DEBUG    2316 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:33:00.727 0 DEBUG    2316 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:33:00.731 0 DEBUG    2316 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:33:00.732 0 DEBUG    2316 Call Rover init
+15.11.2016 00:33:00.733 0 DEBUG    2316 start rover init TH  0x90c
+15.11.2016 00:33:00.734 0 DEBUG    2316 Call Rover connect
+15.11.2016 00:33:00.734 0 DEBUG    2316 send openport TH  0x90c
+15.11.2016 00:33:00.734 0 DEBUG    2316 RequestMapper: created
+15.11.2016 00:33:00.743 0 DEBUG    2316 HttpListener: Listening on port 8080
+15.11.2016 00:33:00.743 1 WARNING  2316 Application has started
+15.11.2016 00:33:00.753 0 DEBUG    1944 serialcomm open TH  0x798
+15.11.2016 00:33:00.754 0 DEBUG    1944 start serialcomm TH  0x798
+15.11.2016 00:33:00.765 1 WARNING  1944 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:38:13.310 0 DEBUG    3224 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:38:13.310 0 DEBUG    3224 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:38:13.315 0 DEBUG    3224 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:38:13.316 0 DEBUG    3224 Call Rover init
+15.11.2016 00:38:13.317 0 DEBUG    3224 start rover init TH  0xc98
+15.11.2016 00:38:13.317 4 INFO     3224 Rover PortName =  "\\.OM4"
+15.11.2016 00:38:13.339 4 INFO     3224 Rover PortRate =  9600
+15.11.2016 00:38:13.340 0 DEBUG    3224 Call Rover connect
+15.11.2016 00:38:13.340 0 DEBUG    3224 send openport TH  0xc98
+15.11.2016 00:38:13.340 0 DEBUG    3224 RequestMapper: created
+15.11.2016 00:38:13.350 0 DEBUG    3224 HttpListener: Listening on port 8080
+15.11.2016 00:38:13.350 1 WARNING  3224 Application has started
+15.11.2016 00:38:13.404 0 DEBUG    1448 serialcomm open TH  0x5a8
+15.11.2016 00:38:13.404 0 DEBUG    1448 start serialcomm TH  0x5a8
+15.11.2016 00:38:13.416 1 WARNING  1448 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:53:40.735 0 DEBUG    4092 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:53:40.735 0 DEBUG    4092 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:53:40.738 0 DEBUG    4092 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:53:40.739 0 DEBUG    4092 Call Rover init
+15.11.2016 00:53:40.739 0 DEBUG    4092 start rover init TH  0xffc
+15.11.2016 00:53:40.739 4 INFO     4092 Rover PortName =  "\\.OM4"
+15.11.2016 00:53:40.741 4 INFO     4092 Rover PortRate =  9600
+15.11.2016 00:53:40.742 0 DEBUG    4092 Call Rover connect
+15.11.2016 00:53:40.742 0 DEBUG    4092 send openport TH  0xffc
+15.11.2016 00:53:40.743 0 DEBUG    4092 RequestMapper: created
+15.11.2016 00:53:40.756 0 DEBUG    4092 HttpListener: Listening on port 8080
+15.11.2016 00:53:40.756 1 WARNING  4092 Application has started
+15.11.2016 00:53:40.760 0 DEBUG    7912 serialcomm open TH  0x1ee8
+15.11.2016 00:53:40.760 0 DEBUG    7912 start serialcomm TH  0x1ee8
+15.11.2016 00:53:40.772 1 WARNING  7912 QObject::connect: Cannot queue arguments of type 'ErrCode'
+(Make sure 'ErrCode' is registered using qRegisterMetaType().)
+15.11.2016 00:53:40.772 3 FATAL    7912 port \.OM4 open error
+15.11.2016 00:54:33.523 0 DEBUG    4312 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 00:54:33.523 0 DEBUG    4312 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 00:54:33.527 0 DEBUG    4312 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 00:54:33.529 0 DEBUG    4312 Call Rover init
+15.11.2016 00:54:33.529 0 DEBUG    4312 start rover init TH  0x10d8
+15.11.2016 00:54:33.529 4 INFO     4312 Rover PortName =  "\\\\.\\COM4"
+15.11.2016 00:54:33.533 4 INFO     4312 Rover PortRate =  9600
+15.11.2016 00:54:33.534 0 DEBUG    4312 Call Rover connect
+15.11.2016 00:54:33.534 0 DEBUG    4312 send openport TH  0x10d8
+15.11.2016 00:54:33.534 0 DEBUG    4312 RequestMapper: created
+15.11.2016 00:54:33.544 0 DEBUG    4312 HttpListener: Listening on port 8080
+15.11.2016 00:54:33.544 1 WARNING  4312 Application has started
+15.11.2016 00:54:33.553 0 DEBUG    8064 serialcomm open TH  0x1f80
+15.11.2016 00:54:33.553 0 DEBUG    8064 start serialcomm TH  0x1f80
+15.11.2016 00:54:33.870 4 INFO     8064 port  "\\\\.\\COM4"  opened
+15.11.2016 01:14:28.848 0 DEBUG    6896 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc, encoding=UTF-8, maxAge=60000
+15.11.2016 01:14:28.848 0 DEBUG    6896 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 01:14:28.851 0 DEBUG    6896 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 01:14:28.852 0 DEBUG    6896 Call Rover init
+15.11.2016 01:14:28.853 0 DEBUG    6896 start rover init TH  0x1af0
+15.11.2016 01:14:28.853 4 INFO     6896 Rover PortName =  "\\\\.\\COM4"
+15.11.2016 01:14:28.855 4 INFO     6896 Rover PortRate =  9600
+15.11.2016 01:14:28.855 0 DEBUG    6896 Call Rover connect
+15.11.2016 01:14:28.855 0 DEBUG    6896 send openport TH  0x1af0
+15.11.2016 01:14:28.856 0 DEBUG    6896 RequestMapper: created
+15.11.2016 01:14:28.880 0 DEBUG    6896 HttpListener: Listening on port 8080
+15.11.2016 01:14:28.881 1 WARNING  6896 Application has started
+15.11.2016 01:14:28.930 0 DEBUG    428 serialcomm open TH  0x1ac
+15.11.2016 01:14:28.930 0 DEBUG    428 start serialcomm TH  0x1ac
+15.11.2016 01:14:29.250 4 INFO     428 port  "\\\\.\\COM4"  opened
+15.11.2016 01:18:58.758 0 DEBUG    1740 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc/docroot, encoding=UTF-8, maxAge=60000
+15.11.2016 01:18:58.773 0 DEBUG    1740 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 01:18:58.773 0 DEBUG    1740 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 01:18:58.773 0 DEBUG    1740 Call Rover init
+15.11.2016 01:18:58.773 0 DEBUG    1740 start rover init TH  0x6cc
+15.11.2016 01:18:58.773 4 INFO     1740 Rover PortName =  "\\\\.\\COM4"
+15.11.2016 01:18:58.773 4 INFO     1740 Rover PortRate =  9600
+15.11.2016 01:18:58.773 0 DEBUG    1740 Call Rover connect
+15.11.2016 01:18:58.773 0 DEBUG    1740 send openport TH  0x6cc
+15.11.2016 01:18:58.773 0 DEBUG    1740 RequestMapper: created
+15.11.2016 01:18:58.789 0 DEBUG    1740 HttpListener: Listening on port 8080
+15.11.2016 01:18:58.789 1 WARNING  1740 Application has started
+15.11.2016 01:18:58.789 0 DEBUG    8096 serialcomm open TH  0x1fa0
+15.11.2016 01:18:58.789 0 DEBUG    8096 start serialcomm TH  0x1fa0
+15.11.2016 01:18:59.102 4 INFO     8096 port  "\\\\.\\COM4"  opened
+15.11.2016 01:22:00.355 0 DEBUG    4788 StaticFileController: docroot=C:/Users/shark/Documents/Qt_projects/RoverRest/etc/docroot, encoding=UTF-8, maxAge=60000
+15.11.2016 01:22:00.355 0 DEBUG    4788 StaticFileController: cache timeout=60000, size=1000000
+15.11.2016 01:22:00.368 0 DEBUG    4788 Using config file C:/Users/shark/Documents/Qt_projects/RoverRest/etc/rover.ini
+15.11.2016 01:22:00.370 0 DEBUG    4788 Call Rover init
+15.11.2016 01:22:00.370 0 DEBUG    4788 start rover init TH  0x12b4
+15.11.2016 01:22:00.370 4 INFO     4788 Rover PortName =  "\\\\.\\COM4"
+15.11.2016 01:22:00.382 4 INFO     4788 Rover PortRate =  9600
+15.11.2016 01:22:00.383 0 DEBUG    4788 Call Rover connect
+15.11.2016 01:22:00.383 0 DEBUG    4788 send openport TH  0x12b4
+15.11.2016 01:22:00.384 0 DEBUG    4788 RequestMapper: created
+15.11.2016 01:22:00.397 0 DEBUG    4788 HttpListener: Listening on port 8080
+15.11.2016 01:22:00.397 1 WARNING  4788 Application has started
+15.11.2016 01:22:00.427 0 DEBUG    6388 serialcomm open TH  0x18f4
+15.11.2016 01:22:00.427 0 DEBUG    6388 start serialcomm TH  0x18f4
+15.11.2016 01:22:00.743 4 INFO     6388 port  "\\\\.\\COM4"  opened
+15.11.2016 01:22:27.622 0 DEBUG    3892 HttpConnectionHandler (0x98b000): thread started
+15.11.2016 01:22:27.631 0 DEBUG    3892 HttpConnectionHandler (0x98b000): handle new connection
+15.11.2016 01:22:27.632 0 DEBUG    3892 HttpConnectionHandler (0x98b000): read input
+15.11.2016 01:22:27.632 0 DEBUG    3892 HttpRequest: read request
+15.11.2016 01:22:27.632 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header host: 127.0.0.1:8080
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header connection: keep-alive
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header content-length: 30
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header postman-token: 74826369-1f3f-933b-890a-504cfc1bb044
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header cache-control: no-cache
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header origin: chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header user-agent: Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header content-type: text/plain;charset=UTF-8
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header accept: */*
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: received header accept-encoding: gzip, deflate, br
+15.11.2016 01:22:27.633 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.634 0 DEBUG    3892 HttpRequest: received header accept-language: ru,en-US;q=0.8,en;q=0.6,fr;q=0.4
+15.11.2016 01:22:27.634 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:22:27.634 0 DEBUG    3892 HttpRequest: headers completed
+15.11.2016 01:22:27.634 0 DEBUG    3892 HttpRequest: expect 30 bytes body
+15.11.2016 01:22:27.634 0 DEBUG    3892 HttpRequest: receive body
+15.11.2016 01:22:27.634 0 DEBUG    3892 HttpRequest: extract and decode request parameters
+15.11.2016 01:22:27.634 0 DEBUG    3892 HttpRequest: extract cookies
+15.11.2016 01:22:27.634 0 DEBUG    3892 HttpConnectionHandler (0x98b000): received request
+15.11.2016 01:22:27.634 0 DEBUG    3892 RequestMapper: path=/vehicle
+15.11.2016 01:22:27.634 4 INFO     3892 vehicle service
+15.11.2016 01:22:27.638 0 DEBUG    3892 RequestMapper: finished request
+15.11.2016 01:22:27.639 0 DEBUG    3892 HttpConnectionHandler (0x98b000): finished request
+15.11.2016 01:22:36.397 0 DEBUG    3892 HttpConnectionHandler (0x98b000): disconnected
+15.11.2016 01:23:21.390 0 DEBUG    3892 HttpConnectionHandler (0x98b000): handle new connection
+15.11.2016 01:23:21.391 0 DEBUG    3892 HttpConnectionHandler (0x98b000): read input
+15.11.2016 01:23:21.391 0 DEBUG    3892 HttpRequest: read request
+15.11.2016 01:23:21.391 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.391 0 DEBUG    3892 HttpRequest: received header host: 127.0.0.1:8080
+15.11.2016 01:23:21.391 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.391 0 DEBUG    3892 HttpRequest: received header connection: keep-alive
+15.11.2016 01:23:21.391 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.391 0 DEBUG    3892 HttpRequest: received header cache-control: no-cache
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: received header user-agent: Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: received header postman-token: ddd135d5-e84d-c317-4831-f7741efb71a6
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: received header accept: */*
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: received header accept-encoding: gzip, deflate, sdch, br
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: received header accept-language: ru,en-US;q=0.8,en;q=0.6,fr;q=0.4
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: read header
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: headers completed
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: expect no body
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: extract and decode request parameters
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpRequest: extract cookies
+15.11.2016 01:23:21.392 0 DEBUG    3892 HttpConnectionHandler (0x98b000): received request
+15.11.2016 01:23:21.392 0 DEBUG    3892 RequestMapper: path=/vehicle
+15.11.2016 01:23:21.392 4 INFO     3892 vehicle service

@@ -11,9 +11,12 @@ TEMPLATE = app
 
 SOURCES += src/main.cpp \
     src/requestmapper.cpp \
-    src/rovermanager.cpp
+    src/rovermanager.cpp \
+    src/controller/vehiclecontroller.cpp
 
-OTHER_FILES += etc/*  logs/*
+OTHER_FILES += etc/*  logs/* etc/docroot/*
+
+#INCLUDEPATH += src
 
 win32 {
    DEFINES += QTWEBAPPLIB_IMPORT
@@ -50,4 +53,5 @@ CONFIG(debug, debug|release) {
 
 HEADERS += \
     src/requestmapper.h \
-    src/rovermanager.h
+    src/rovermanager.h \
+    src/controller/vehiclecontroller.h

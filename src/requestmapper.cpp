@@ -38,6 +38,7 @@ void RequestMapper::service(HttpRequest& request, HttpResponse& response)
     if (path.startsWith("/vehicle"))
     {
         qInfo("vehicle service");
+        VehicleController().service(request,response);
     } else
 
     if (path.startsWith("/manip"))

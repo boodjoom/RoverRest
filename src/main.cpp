@@ -66,10 +66,10 @@ int main(int argc, char *argv[])
     QString configFileName=searchConfigFile(QCoreApplication::applicationName());
 
     // Configure logging into a file
-    QSettings* logSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
-    logSettings->beginGroup("logging");
-    FileLogger* logger=new FileLogger(logSettings,10000,&app);
-    logger->installMsgHandler();
+//    QSettings* logSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+//    logSettings->beginGroup("logging");
+//    FileLogger* logger=new FileLogger(logSettings,10000,&app);
+//    logger->installMsgHandler();
 
     // Configure static file controller
     QSettings* fileSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
