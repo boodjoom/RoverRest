@@ -64,8 +64,10 @@ int main(int argc, char *argv[])
 
     // Find the configuration file
     QString configFileName=searchConfigFile(QCoreApplication::applicationName());
-#ifdef LOG_TO_FILE
+
     // Configure logging into a file
+//if(argc>1 ** )
+#if 0
     QSettings* logSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
     logSettings->beginGroup("logging");
     FileLogger* logger=new FileLogger(logSettings,10000,&app);
