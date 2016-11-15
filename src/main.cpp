@@ -64,13 +64,13 @@ int main(int argc, char *argv[])
 
     // Find the configuration file
     QString configFileName=searchConfigFile(QCoreApplication::applicationName());
-
+#ifdef LOG_TO_FILE
     // Configure logging into a file
-//    QSettings* logSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
-//    logSettings->beginGroup("logging");
-//    FileLogger* logger=new FileLogger(logSettings,10000,&app);
-//    logger->installMsgHandler();
-
+    QSettings* logSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
+    logSettings->beginGroup("logging");
+    FileLogger* logger=new FileLogger(logSettings,10000,&app);
+    logger->installMsgHandler();
+#endif
     // Configure static file controller
     QSettings* fileSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
     fileSettings->beginGroup("docroot");

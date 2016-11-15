@@ -31,3 +31,8 @@ include(qtservice/qtservice.pri)
 include(logging/logging.pri)
 include(httpserver/httpserver.pri)
 include(templateengine/templateengine.pri)
+
+unix {
+    target.path = /usr/lib
+    INSTALLS += target
+}
