@@ -5,7 +5,7 @@ RoverManager::RoverManager()
 
 }
 
-Rover *RoverManager::instance()
+Rover *RoverManager::rover()
 {
     static Rover* _instance = new Rover();
     return _instance;

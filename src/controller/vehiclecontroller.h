@@ -13,10 +13,14 @@ class VehicleController: public HttpRequestHandler {
 public:
 
     /** Constructor */
-    VehicleController();
+    VehicleController(QSettings *params);
 
     /** Generates the response */
     void service(HttpRequest& request, HttpResponse& response);
+
+    void readTimeout();
+private:
+    QSettings* _params;
 };
 
 #endif // VEHICLECONTROLLER_H

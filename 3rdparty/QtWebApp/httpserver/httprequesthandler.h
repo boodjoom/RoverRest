@@ -46,6 +46,8 @@ public:
     */
     virtual void service(HttpRequest& request, HttpResponse& response);
 
+    virtual void readTimeout();
+
 };
 
 } // end of namespace

@@ -139,6 +139,16 @@ void HttpConnectionHandler::readTimeout()
     socket->disconnectFromHost();
     delete currentRequest;
     currentRequest=0;
+
+    // Call the request mapper
+    try
+    {
+        requestHandler->readTimeout();
+    }
+    catch (...)
+    {
+        qCritical("HttpConnectionHandler (%p): An uncatched exception occured in the request handler",this);
+    }
 }
 
 

@@ -15,8 +15,9 @@ extern FileLogger* logger;
 /** Controller for static files */
 extern StaticFileController* staticFileController;
 
-RequestMapper::RequestMapper(QObject* parent)
+RequestMapper::RequestMapper(QSettings *params, QObject* parent)
     :HttpRequestHandler(parent)
+    , _params(params)
 {
     qDebug("RequestMapper: created");
 }
@@ -38,7 +39,7 @@ void RequestMapper::service(HttpRequest& request, HttpResponse& response)
     if (path.startsWith("/vehicle"))
     {
         qInfo("vehicle service");
-        VehicleController().service(request,response);
+        VehicleController(_params).service(request,response);
     } else
 
     if (path.startsWith("/manip"))
@@ -60,4 +61,9 @@ void RequestMapper::service(HttpRequest& request, HttpResponse& response)
     {
        logger->clear();
     }
+}
+
+void RequestMapper::readTimeout()
+{
+    VehicleController(_params).readTimeout();
 }

@@ -26,7 +26,7 @@ public:
       Constructor.
       @param parent Parent object
     */
-    RequestMapper(QObject* parent=0);
+    RequestMapper(QSettings* params, QObject* parent=0);
 
     /**
       Destructor.
@@ -40,6 +40,9 @@ public:
     */
     void service(HttpRequest& request, HttpResponse& response);
 
+    void readTimeout();
+private:
+    QSettings* _params;
 };
 
 #endif // REQUESTMAPPER_H

@@ -82,14 +82,16 @@ int main(int argc, char *argv[])
     QString roverConfigFile=searchConfigFile(QCoreApplication::applicationName(),"rover");
     QSettings roverSettings(roverConfigFile, QSettings::IniFormat);
     qDebug()<<"Call Rover init";
-    RoverManager::instance()->init(roverSettings);
+    RoverManager::rover()->init(roverSettings);
     qDebug()<<"Call Rover connect";
-    RoverManager::instance()->connect();
+    RoverManager::rover()->connect();
 
+    QSettings* controlParams=new QSettings(configFileName,QSettings::IniFormat,&app);
+    controlParams->beginGroup("ControlParams");
     // Configure and start the TCP listener
     QSettings* listenerSettings=new QSettings(configFileName,QSettings::IniFormat,&app);
     listenerSettings->beginGroup("listener");
-    new HttpListener(listenerSettings,new RequestMapper(&app),&app);
+    new HttpListener(listenerSettings,new RequestMapper(controlParams,&app),&app);
 
     qWarning("Application has started");
 

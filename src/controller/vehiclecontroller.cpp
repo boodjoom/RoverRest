@@ -3,7 +3,8 @@
 #include "vehiclecontroller.h"
 #include "src/rovermanager.h"
 
-VehicleController::VehicleController()
+VehicleController::VehicleController(QSettings *params)
+    : _params(params)
 {
 
 }
@@ -25,6 +26,7 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
     //parse raw params for get
     if(request.getMethod() == "GET")
     {
+        unsigned long long timeout =0;
         qDebug()<<"vehicle GET";
         bool ok;
         if(!request.getParameter("speed").isEmpty())
@@ -32,8 +34,13 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
             double speed = request.getParameter("speed").toDouble(&ok);
             if(ok)
             {
-                qDebug()<<"setSpeed "<<speed;
-                RoverManager::instance()->setRefSpeed(speed);
+
+                if(!request.getParameter("timeout").isEmpty())
+                    timeout = request.getParameter("timeout").toULongLong(&ok);
+                if(timeout==0)
+                    timeout=_params->value("vehicleDefaultSpeedTimeout",0).toULongLong(&ok);
+                qDebug()<<"setSpeed "<<speed<<" timeout "<<timeout;
+                RoverManager::rover()->setRefSpeed(speed, timeout);
             }
             else
             {
@@ -46,7 +53,7 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
             if(ok)
             {
                 qDebug()<<"setYaw "<<yaw;
-                RoverManager::instance()->setRefYaw(yaw);
+                RoverManager::rover()->setRefYaw(yaw);
             }
             else
             {
@@ -55,10 +62,13 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
         }
 //        response.write("<html><body>");
         response.write("RefSpeed = ");
-        response.write(QString::number(RoverManager::instance()->getRefSpeed()).toLocal8Bit());
+        response.write(QString::number(RoverManager::rover()->getRefSpeed()).toLocal8Bit());
         response.write("\n");
         response.write("RefYaw = ");
-        response.write(QString::number(RoverManager::instance()->getRefYaw()).toLocal8Bit());
+        response.write(QString::number(RoverManager::rover()->getRefYaw()).toLocal8Bit());
+        response.write("\n");
+        response.write("Timeout = ");
+        response.write(QString::number(timeout).toLocal8Bit());
 //        response.write("</body></html>",true);
         response.write("\n",true);
     } else
@@ -69,6 +79,7 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
         qDebug()<<"reques JSON isEmpty "<<requestDoc.isEmpty();
         if(requestDoc.isObject())
         {
+            unsigned long long timeout =0;
             QJsonObject requestJson = requestDoc.object();
             if(requestJson.contains("speed"))
             {
@@ -76,8 +87,12 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
                 double speed = requestJson["speed"].toVariant().toDouble(&ok);
                 if(ok)
                 {
-                    qDebug()<<"setSpeed "<<speed;
-                    RoverManager::instance()->setRefSpeed(speed);
+                    if(requestJson.contains("timeout"))
+                         timeout =  requestJson["timeout"].toVariant().toULongLong(&ok);
+                    if(timeout==0)
+                        timeout=_params->value("vehicleDefaultSpeedTimeout",0).toULongLong(&ok);
+                    qDebug()<<"setSpeed "<<speed<<" timeout "<<timeout;
+                    RoverManager::rover()->setRefSpeed(speed,timeout);
                 }
                 else
                 {
@@ -91,7 +106,7 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
                 if(ok)
                 {
                     qDebug()<<"setYaw "<<yaw;
-                    RoverManager::instance()->setRefYaw(yaw);
+                    RoverManager::rover()->setRefYaw(yaw);
                 }
                 else
                 {
@@ -111,5 +126,14 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
 //        response.write("<br>City = ");
 //        response.write(request.getParameter("city"));
 //        response.write("</body></html>",true);
-//    }
+    //    }
+}
+
+void VehicleController::readTimeout()
+{
+    bool stopVehicleOnHttpTimeout=true;
+    if(_params)
+        stopVehicleOnHttpTimeout = _params->value("stopVehicleOnHttpTimeout",true).toBool();
+    if(stopVehicleOnHttpTimeout)
+        RoverManager::rover()->setRefSpeed(0);
 }

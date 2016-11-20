@@ -19,7 +19,7 @@ class RoverManager
 {
 public:
     RoverManager();
-    static Rover* instance();
+    static Rover* rover();
 };
 
 #endif // ROVERMANAGER_H
