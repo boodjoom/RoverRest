@@ -39,7 +39,7 @@ CONFIG(debug, debug|release) {
 }
 
 #RoboBody
-INCLUDEPATH += $$PWD/../RoboBody
+INCLUDEPATH += $$PWD/../RoboBody/src
 
 CONFIG(release, debug|release) {
 #    win32:      LIBS += -L$$PWD/3rdparty/lib/win32-mingw/release/          -lQtWebApp1
