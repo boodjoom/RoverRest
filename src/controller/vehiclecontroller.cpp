@@ -61,16 +61,17 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
             }
         }
 //        response.write("<html><body>");
-        response.write("RefSpeed = ");
-        response.write(QString::number(RoverManager::rover()->getRefSpeed()).toLocal8Bit());
-        response.write("\n");
-        response.write("RefYaw = ");
-        response.write(QString::number(RoverManager::rover()->getRefYaw()).toLocal8Bit());
-        response.write("\n");
-        response.write("Timeout = ");
-        response.write(QString::number(timeout).toLocal8Bit());
-//        response.write("</body></html>",true);
-        response.write("\n",true);
+//        response.write("RefSpeed = ");
+//        response.write(QString::number(RoverManager::rover()->getRefSpeed()).toLocal8Bit());
+//        response.write("\n");
+//        response.write("RefYaw = ");
+//        response.write(QString::number(RoverManager::rover()->getRefYaw()).toLocal8Bit());
+//        response.write("\n");
+//        response.write("Timeout = ");
+//        response.write(QString::number(timeout).toLocal8Bit());
+////        response.write("</body></html>",true);
+//        response.write("\n",true);
+        responseJson["timeout"]=QString::number(timeout);
     } else
     if(request.getMethod() == "POST")
     {
@@ -115,18 +116,12 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
             }
         }
     }
-//    QJsonDocument doc(responseJson);
-//    response.write(doc.toJson(),true);
-    response.setStatus(200);
 
-//    {
-//        response.write("<html><body>");
-//        response.write("Name = ");
-//        response.write(request.getParameter("name"));
-//        response.write("<br>City = ");
-//        response.write(request.getParameter("city"));
-//        response.write("</body></html>",true);
-    //    }
+    responseJson["speed"]=QString::number(RoverManager::rover()->getRefSpeed());
+    responseJson["yaw"]=QString::number(RoverManager::rover()->getRefYaw());
+    QJsonDocument doc(responseJson);
+    response.write(doc.toJson(),true);
+    response.setStatus(200);
 }
 
 void VehicleController::readTimeout()
