@@ -28,7 +28,6 @@ INCLUDEPATH += $$PWD/3rdparty/QtWebApp
 
 # Directory where the release version of the shared library (*.dll or *.so) is stored, and base name of the file.
 CONFIG(release, debug|release) {
-    DEFINES += LOG_TO_FILE
     win32:      LIBS += -L$$PWD/3rdparty/lib/win32-mingw/release/          -lQtWebApp1
     unix:!mac:  LIBS += -L$$PWD/3rdparty/lib/rpi-g++/release/              -lQtWebApp
 }
@@ -56,3 +55,8 @@ HEADERS += \
     src/requestmapper.h \
     src/rovermanager.h \
     src/controller/vehiclecontroller.h
+
+unix:!mac:{
+target.path = /usr/local/bin
+INSTALLS += target
+}
