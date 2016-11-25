@@ -16,7 +16,7 @@ SOURCES += src/main.cpp \
 
 OTHER_FILES += etc/*  logs/* etc/docroot/*
 
-#INCLUDEPATH += src
+include(common.pri)
 
 win32 {
    DEFINES += QTWEBAPPLIB_IMPORT
@@ -28,13 +28,13 @@ INCLUDEPATH += $$PWD/3rdparty/QtWebApp
 
 # Directory where the release version of the shared library (*.dll or *.so) is stored, and base name of the file.
 CONFIG(release, debug|release) {
-    win32:      LIBS += -L$$PWD/3rdparty/lib/win32-mingw/release/          -lQtWebApp1
+    win32:      LIBS += -L$$PWD/3rdparty/lib/$$Platform-$$Compiler/release/          -lQtWebApp1
     unix:!mac:  LIBS += -L$$PWD/3rdparty/lib/rpi-g++/release/              -lQtWebApp
 }
 
 # Directory where the debug version of the shared library (*.dll or *.so) is stored, and base name of the file.
 CONFIG(debug, debug|release) {
-    win32:      LIBS += -L$$PWD/3rdparty/lib/win32-mingw/debug/          -lQtWebAppd1
+    win32:      LIBS += -L$$PWD/3rdparty/lib/$$Platform-$$Compiler/debug/          -lQtWebAppd1
     unix:!mac:  LIBS += -L$$PWD/3rdparty/lib/rpi-g++/debug/              -lQtWebAppd
 }
 
