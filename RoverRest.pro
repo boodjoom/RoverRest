@@ -47,7 +47,7 @@ CONFIG(release, debug|release) {
 }
 
 CONFIG(debug, debug|release) {
-    win32:      LIBS += -L$$PWD/../build-RoboBody-Qt_5_5_1_MinGW_32bit-Debug/debug/          -lRoboBody
+    win32:      LIBS += -L$$PWD/lib/$$Platform-$$Compiler/debug/          -lRoboBody
 #    unix:!mac:  LIBS += -L$$PWD/3rdparty/lib/rpi-g++/debug/              -lQtWebAppd
 }
 
