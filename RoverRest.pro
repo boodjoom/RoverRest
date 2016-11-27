@@ -12,7 +12,9 @@ TEMPLATE = app
 SOURCES += src/main.cpp \
     src/requestmapper.cpp \
     src/rovermanager.cpp \
-    src/controller/vehiclecontroller.cpp
+    src/controller/vehiclecontroller.cpp \
+    src/controller/manipcontroller.cpp \
+    src/controller/telemetrycontroller.cpp
 
 OTHER_FILES += etc/*  logs/* etc/docroot/*
 
@@ -54,7 +56,9 @@ CONFIG(debug, debug|release) {
 HEADERS += \
     src/requestmapper.h \
     src/rovermanager.h \
-    src/controller/vehiclecontroller.h
+    src/controller/vehiclecontroller.h \
+    src/controller/manipcontroller.h \
+    src/controller/telemetrycontroller.h
 
 unix:!mac:{
 target.path = /usr/local/bin

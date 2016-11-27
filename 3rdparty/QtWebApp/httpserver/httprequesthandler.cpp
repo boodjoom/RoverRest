@@ -26,3 +26,8 @@ void HttpRequestHandler::readTimeout()
 {
     qDebug("HttpRequestHandler: read timeout");
 }
+
+void stefanfrings::HttpRequestHandler::readTimeout()
+{
+
+}

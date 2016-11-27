@@ -8,6 +8,7 @@
 #include <httpserver/staticfilecontroller.h>
 #include "requestmapper.h"
 #include "controller/vehiclecontroller.h"
+#include "controller/telemetrycontroller.h"
 
 /** Redirects log messages to a file */
 extern FileLogger* logger;
@@ -45,6 +46,12 @@ void RequestMapper::service(HttpRequest& request, HttpResponse& response)
     if (path.startsWith("/manip"))
     {
         qInfo("manip service");
+    } else
+
+    if (path.startsWith("/telemetry"))
+    {
+        qInfo("telemetry service");
+        TelemetryController::instance()->service(request, response);
     }
 
     // All other pathes are mapped to the static file controller.
