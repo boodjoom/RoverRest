@@ -119,6 +119,7 @@ void VehicleController::service(HttpRequest &request, HttpResponse &response)
 
     responseJson["speed"]=QString::number(RoverManager::rover()->getRefSpeed());
     responseJson["yaw"]=QString::number(RoverManager::rover()->getRefYaw());
+    responseJson["travel"]=QString::number(RoverManager::rover()->getTravel());
     QJsonDocument doc(responseJson);
     response.write(doc.toJson(),true);
     response.setStatus(200);
