@@ -28,7 +28,11 @@ void TelemetryController::service(HttpRequest &request, HttpResponse &response)
     if(request.getMethod() == "POST")
     {
         QJsonDocument requestDoc = QJsonDocument::fromJson(request.getBody());
-        qDebug()<<"reques JSON isEmpty "<<requestDoc.isEmpty();
+	if(requestDoc.isEmpty())
+{
+        qDebug()<<"request JSON isEmpty ";
+	responseStatus = 401;
+} else 
         if(requestDoc.isObject())
         {
             _socket.writeDatagram(requestDoc.toJson(),_host,_port);
