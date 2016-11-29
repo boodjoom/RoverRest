@@ -17,7 +17,7 @@ SOURCES += src/main.cpp \
     src/controller/telemetrycontroller.cpp \
     src/controller/statecontroller.cpp
 
-OTHER_FILES += etc/*  logs/* etc/docroot/*
+OTHER_FILES += etc/*  logs/* etc/docroot/* install.sh build.sh service.sh
 
 include(common.pri)
 
