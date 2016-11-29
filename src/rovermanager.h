@@ -10,6 +10,7 @@ class RoverManager
 public:
     RoverManager();
     static Rover* rover();
+    static QString toString(ManipState state);
 };
 
 #endif // ROVERMANAGER_H

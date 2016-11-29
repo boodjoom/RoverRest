@@ -1,6 +1,6 @@
 <html><body>
 <iframe name="hiddenFrame" width="0" height="0" border="0"  style="display: none;"></iframe>
-<form action="/vehicle" id="myForm" method="get" name="myForm" target="resultFrame">
+<form action="/vehicle" id="vehicleCtrl" method="get" name="vehicleCtrl" target="resultFrame">
 <button name="speed" value="1">Forward</button>
 <br>
 <button name="speed" value="0">Stop</button> 
@@ -11,6 +11,11 @@
 <button name="yaw" value="-1">ToLeft</button> 
 <button name="yaw" value="0">ToCenter</button> 
 <button name="yaw" value="1">ToRight</button> 
+</form>
+<br>
+<br>
+<form action="/manip" id="manipCtrl" method="get" name="manipCtrl" target="resultFrame">
+<button name="action" value="start">Start manip</button>
 </form>
 <iframe name="resultFrame" height="100" border="1" ></iframe>
 </body></html>
