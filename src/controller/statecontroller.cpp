@@ -22,7 +22,7 @@ void StateController::service(HttpRequest &request, HttpResponse &response)
         responseJson["yaw"]=QString::number(RoverManager::rover()->getRefYaw());
         responseJson["travel"]=QString::number(RoverManager::rover()->getTravel());
         responseJson["state"]=RoverManager::toString(RoverManager::rover()->getManipState());
-        responseJson["battary"]=QString::number(RoverManager::rover()->getBattery());
+        responseJson["battery"]=QString::number(RoverManager::rover()->getBattery());
         QJsonDocument doc(responseJson);
         response.write(doc.toJson(),true);
     }
