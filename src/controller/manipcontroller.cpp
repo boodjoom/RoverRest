@@ -3,6 +3,7 @@
 
 #include "manipcontroller.h"
 #include "src/rovermanager.h"
+#include "manipaction.h"
 
 ManipController::ManipController(QSettings *params)
     : _params(params)
@@ -20,12 +21,48 @@ void ManipController::service(HttpRequest &request, HttpResponse &response)
     {
         if(!request.getParameter("action").isEmpty())
         {
+          const QString stop("stop");
+          const QString base("base");
+          const QString target("target");
+          const QString home("home");
+          const QString open("open");
+          const QString close("close");
             if(0 == start.compare(QString(request.getParameter("action")),Qt::CaseInsensitive))
             {
                 RoverManager::rover()->startManip();
                 responseStatus = 200;
+            } else 
+            if(0 == stop.compare(QString(request.getParameter("action")),Qt::CaseInsensitive))
+            {
+                RoverManager::rover()->execManip(ManipAction::Stop);
+                responseStatus = 200;
+            } else
+            if(0 == base.compare(QString(request.getParameter("action")),Qt::CaseInsensitive))
+            {
+                RoverManager::rover()->execManip(ManipAction::Base);
+                responseStatus = 200;
+            } else
+            if(0 == target.compare(QString(request.getParameter("action")),Qt::CaseInsensitive))
+            {
+                RoverManager::rover()->execManip(ManipAction::Target);
+                responseStatus = 200;
+            } else
+            if(0 == home.compare(QString(request.getParameter("action")),Qt::CaseInsensitive))
+            {
+                RoverManager::rover()->execManip(ManipAction::Home);
+                responseStatus = 200;
+            } else
+            if(0 == open.compare(QString(request.getParameter("action")),Qt::CaseInsensitive))
+            {
+                RoverManager::rover()->execManip(ManipAction::Open);
+                responseStatus = 200;
+            } else
+            if(0 == close.compare(QString(request.getParameter("action")),Qt::CaseInsensitive))
+            {
+                RoverManager::rover()->execManip(ManipAction::Close);
+                responseStatus = 200;
             }
-            else
+              else
                 responseStatus=403;
         } else
             responseStatus = 200;
