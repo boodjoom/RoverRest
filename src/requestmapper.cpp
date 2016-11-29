@@ -9,6 +9,8 @@
 #include "requestmapper.h"
 #include "controller/vehiclecontroller.h"
 #include "controller/telemetrycontroller.h"
+#include "controller/manipcontroller.h"
+#include "controller/statecontroller.h"
 
 /** Redirects log messages to a file */
 extern FileLogger* logger;
@@ -46,6 +48,13 @@ void RequestMapper::service(HttpRequest& request, HttpResponse& response)
     if (path.startsWith("/manip"))
     {
         qInfo("manip service");
+        ManipController(_params).service(request,response);
+    } else
+
+    if (path.startsWith("/state"))
+    {
+        qInfo("state service");
+        StateController(_params).service(request,response);
     } else
 
     if (path.startsWith("/telemetry"))

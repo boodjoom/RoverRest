@@ -14,7 +14,8 @@ SOURCES += src/main.cpp \
     src/rovermanager.cpp \
     src/controller/vehiclecontroller.cpp \
     src/controller/manipcontroller.cpp \
-    src/controller/telemetrycontroller.cpp
+    src/controller/telemetrycontroller.cpp \
+    src/controller/statecontroller.cpp
 
 OTHER_FILES += etc/*  logs/* etc/docroot/*
 
@@ -58,7 +59,8 @@ HEADERS += \
     src/rovermanager.h \
     src/controller/vehiclecontroller.h \
     src/controller/manipcontroller.h \
-    src/controller/telemetrycontroller.h
+    src/controller/telemetrycontroller.h \
+    src/controller/statecontroller.h
 
 unix:!mac:{
 target.path = /usr/local/bin

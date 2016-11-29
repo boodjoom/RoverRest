@@ -55,9 +55,12 @@ void ManipController::service(HttpRequest &request, HttpResponse &response)
             responseStatus = 401;
         }
     }
-    responseJson["state"]=RoverManager::toString(RoverManager::rover()->getManipState());
-//    responseJson["stateId"]=QString::number((int)RoverManager::rover()->getManipState());
-    QJsonDocument doc(responseJson);
-    response.write(doc.toJson(),true);
+    if(responseStatus<400)
+    {
+        responseJson["state"]=RoverManager::toString(RoverManager::rover()->getManipState());
+    //    responseJson["stateId"]=QString::number((int)RoverManager::rover()->getManipState());
+        QJsonDocument doc(responseJson);
+        response.write(doc.toJson(),true);
+    }
     response.setStatus(responseStatus);
 }
