@@ -29,6 +29,7 @@ void ManipController::service(HttpRequest &request, HttpResponse &response)
           const QString close("close");
             if(0 == start.compare(QString(request.getParameter("action")),Qt::CaseInsensitive))
             {
+                qDebug()<<"manip start request";
                 RoverManager::rover()->startManip();
                 responseStatus = 200;
             } else 
