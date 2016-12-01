@@ -1,29 +1,27 @@
 <html><body>
 <iframe name="hiddenFrame" width="0" height="0" border="0"  style="display: none;"></iframe>
 <form action="/vehicle" id="vehicleCtrl" method="get" name="vehicleCtrl" target="resultFrame">
-<button name="speed" value="1">Forward</button>
+<button name="speed" value="1" style="height:50px; width:308px; font-size:20pt;">Forward</button>
 <br>
-<button name="speed" value="0">Stop</button> 
+<button name="speed" value="0" style="height:50px; width:308px; background-color:red;font-size:20pt;">Stop</button>
 <br>
-<button name="speed" value="-1">Backward</button>
+<button name="speed" value="-1" style="height:50px; width:308px;font-size:20pt;">Backward</button>
 <br>
-<br>
-<button name="yaw" value="-1">ToLeft</button> 
-<button name="yaw" value="0">ToCenter</button> 
-<button name="yaw" value="1">ToRight</button> 
+<button name="yaw" value="-1" style="height:50px; width:100px; font-size:16pt;">ToLeft</button>
+<button name="yaw" value="0"  style="height:50px; width:100px; font-size:16pt;">ToCenter</button>
+<button name="yaw" value="1"  style="height:50px; width:100px; font-size:16pt;">ToRight</button>
 </form>
-<br>
-<br>
+
 <form action="/manip" id="manipCtrl" method="get" name="manipCtrl" target="resultFrame">
-<button name="action" value="start">Start manip</button>
-<button name="action" value="stop">Stop manip</button>
+<button name="action" value="start" style="height:50px; width:204px; font-size:16pt;">Start manip</button>
+<button name="action" value="stop" style="height:50px; width:100px; background-color:red; font-size:12pt;">Stop manip</button>
   <br>
-  <button name="action" value="home">Manip To Home</button>
-  <button name="action" value="target">Manip To Target</button>
-  <button name="action" value="base">Manip To Base</button>
+  <button name="action" value="home"   style="height:50px; width:100px; font-size:12pt;">Manip To Home</button>
+  <button name="action" value="target" style="height:50px; width:100px; font-size:12pt;">Manip To Target</button>
+  <button name="action" value="base"   style="height:50px; width:100px; font-size:12pt;">Manip To Base</button>
   <br>
-  <button name="action" value="open">Gripper Open</button>
-  <button name="action" value="close">Gripper Close</button>
+  <button name="action" value="open" style="height:50px; width:152px; font-size:12pt;">Gripper Open</button>
+  <button name="action" value="close" style="height:50px; width:152px; font-size:12pt;">Gripper Close</button>
 </form>
-<iframe name="resultFrame" height="100" border="1" ></iframe>
+<iframe name="resultFrame" border="1" style="height:100px; width:304px"></iframe>
 </body></html>
