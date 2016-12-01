@@ -54,6 +54,8 @@ CONFIG(debug, debug|release) {
 #    unix:!mac:  LIBS += -L$$PWD/3rdparty/lib/rpi-g++/debug/              -lQtWebAppd
 }
 
+CONFIG(release, debug|release):DEFINES += QT_NO_DEBUG_OUTPUT
+
 HEADERS += \
     src/requestmapper.h \
     src/rovermanager.h \
