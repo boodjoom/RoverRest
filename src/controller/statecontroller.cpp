@@ -3,6 +3,7 @@
 
 #include "statecontroller.h"
 #include "src/rovermanager.h"
+#include "battery.h"
 
 StateController::StateController(QSettings *params)
     : _params(params)
@@ -22,7 +23,10 @@ void StateController::service(HttpRequest &request, HttpResponse &response)
         responseJson["yaw"]=QString::number(RoverManager::rover()->getRefYaw());
         responseJson["travel"]=QString::number(RoverManager::rover()->getTravel());
         responseJson["state"]=RoverManager::toString(RoverManager::rover()->getManipState());
-        responseJson["battery"]=QString::number(RoverManager::rover()->getBattery());
+        QJsonObject battery;
+        battery["body"]=QString::number(RoverManager::rover()->getBattery(Battery::Body),'f',4);
+        battery["brain"]=QString::number(RoverManager::rover()->getBattery(Battery::Brain),'f',4);
+        responseJson["battery"]=battery;
         QJsonDocument doc(responseJson);
         response.write(doc.toJson(),true);
     }
